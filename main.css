@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Noto Serif', serif;
+}
+
+.main {
+  margin: 0 auto;
+  padding: 0 3%;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.simulator {
+  width: 100%;
+}
+
+.buttons-field {
+  /* padding: 2rem 0; */
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.button-field {
+  cursor: pointer;
+  width: 20%;
+  text-align: center;
+  height: 100%;
+  margin: 0;
+}
+
+.button {
+  display: inline-block;
+}
+
+.icon {
+  background-color: rgba(199, 199, 199, 0.644);
+  text-align: center;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 1.5rem 0;
+}
+
+.icon.active {
+  background-color: rgba(0, 151, 13, 0.801);
+}
+
+.icon:hover {
+  background-color: rgba(3, 117, 83, 0.89);
+}
+
+img {
+  color: white;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.download-bars {
+  align-items: center;
+  margin: 2rem auto;
+  /* padding: 20px 16px; */
+}
+
+.bar {
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.download-bars .label {
+  font-size: 1.5rem;
+  flex-grow: 1;
+  width: 200px;
+  align-content: center;
+  text-align: right;
+  padding-right: 1.5rem;
+  vertical-align: middle;
+}
+
+progress {
+  flex-grow: 4;
+  vertical-align: middle;
+  /* width: 50%; */
+  height: 4rem;
+}
+
+.speed-info {
+  visibility: hidden;
+  font-size: 2rem;
+  /* padding-left: 1.5rem; */
+  color: black;
+  flex-grow: 1;
+  margin-left: 1.5rem;
+}
+
+.speed-info.visible {
+  visibility: visible;
+}
+
+.speed-info.completed {
+  color: rgba(4, 121, 24, 0.89);
+}

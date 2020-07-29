@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check the internet speed!</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="main">
+      <h2>Time is money!</h2>
+      <h3>
+        Jak to mawiają, dlatego sprawdź w jakim czasie uda Ci się ściągnąć
+        określone pliki przy danej przepustowości łącza.
+      </h3>
+      <div class="simulator">
+        <section class="buttons-field">
+          <div class="button-field">
+            <div class="button button-text">
+              <div class="icon">
+                <img src="images/Tekst.png" alt="" />
+              </div>
+              <div class="label">Tekst 50 kB</div>
+            </div>
+          </div>
+          <div class="button-field">
+            <div class="button button-webpage">
+              <div class="icon">
+                <img src="images/Page.png" alt="" />
+              </div>
+              <div class="label">Strona 1 MB</div>
+            </div>
+          </div>
+          <div class="button-field">
+            <div class="button button-music">
+              <div class="icon">
+                <img src="images/Muzyka.png" alt="" />
+              </div>
+              <div class="label">Muzyka 10 MB</div>
+            </div>
+          </div>
+          <div class="button-field">
+            <div class="button button-program">
+              <div class="icon">
+                <img src="images/Program.png" alt="" />
+              </div>
+              <div class="label">Program 100 MB</div>
+            </div>
+          </div>
+          <div class="button-field">
+            <div class="button button-movie">
+              <div class="icon">
+                <img src="images/Film.png" alt="" />
+              </div>
+              <div class="label">Film 1 GB</div>
+            </div>
+          </div>
+        </section>
+        <div class="download-bars">
+          <div class="bar">
+            <label for="prog-1GB" class="label">Internet 1 Gb/s</label>
+            <progress id="prog-1GB" value="0" max="100"></progress>
+            <div class="speed-info">ok. 12.67 sek.</div>
+          </div>
+            <div class="bar">
+              <label for="prog-500MB" class="label">Internet 500 Mb/s</label>
+              <progress id="prog-500MB" value="0" max="100"></progress>
+              <div class="speed-info">ok. 12.67 sek.</div>
+          </div>
+            <div class="bar">
+              <label for="prog-300MB" class="label">Internet 300 Mb/s</label>
+              <progress id="prog-300MB" value="0" max="100"></progress>
+              <div class="speed-info">ok. 12.67 sek.</div>
+          </div>
+            <div class="bar">
+              <label for="prog-150MB" class="label">Internet 150 Mb/s</label>
+              <progress id="prog-150MB" value="0" max="100"></progress>
+              <div class="speed-info">ok. 22.67 sek.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
